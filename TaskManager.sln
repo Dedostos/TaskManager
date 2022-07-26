@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Api", "TaskManager.Api\TaskManager.Api.csproj", "{A1829143-4D67-4A5A-ACB1-56C0FDE88698}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Пояснения", "Пояснения", "{C31B8B18-4386-4BAE-9995-F37EB005F19D}"
+	ProjectSection(SolutionItems) = preProject
+		Пояснения.txt = Пояснения.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Common.Models", "TaskManager.Common.Models\TaskManager.Common.Models.csproj", "{2108CEEE-59CA-4547-879D-70B8BB8A054D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1829143-4D67-4A5A-ACB1-56C0FDE88698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1829143-4D67-4A5A-ACB1-56C0FDE88698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1829143-4D67-4A5A-ACB1-56C0FDE88698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1829143-4D67-4A5A-ACB1-56C0FDE88698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2108CEEE-59CA-4547-879D-70B8BB8A054D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2108CEEE-59CA-4547-879D-70B8BB8A054D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2108CEEE-59CA-4547-879D-70B8BB8A054D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2108CEEE-59CA-4547-879D-70B8BB8A054D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57502811-9170-4C89-96F3-C12E546E5CB1}
+	EndGlobalSection
+EndGlobal

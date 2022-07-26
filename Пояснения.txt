@@ -1,0 +1,27 @@
+
+		Создаём базу данных 
+1. Вначале мы создаём  Blank Solution для того, чтобы мы мобли запихать в него любые проекты
+2. Далее создаём ASP.NET Core API
+3. В самом низу будет класс Weather... и в папке Controlles , будет класс WWeather... их можно удалять 
+	(это примеры работы)
+4. Далее правой кнопкой мыши по TaskManager.Api и создаём папку, в папку добавляем класс User, Task,Project и т.д
+5. Создаём папку Abstraction в ней мы будем хранить класс с свойствами, чтобы не писать их по 10 раз в других классах
+6. Дописываем индивидуальные свойства
+7. нажимаем правой кнопкой мыши по TaskManager и нажимаем Manage NuGet pakeges
+ 7.2 заходим в вкладку browse, скачиваем Microsoft.EntityFrameworkCore.SqlServe и Microsoft.EntityFrameworkCore.Tools
+9. Создаём ApplicationContext (главный класс для создания базы данных) 
+10. Далее в package Manage Console(у меня это нижнее левое окно) после PM> записываем следующее Add-Migration Initial
+11. Далее мы можем посмотреть наши таблицы: SQL server Object Explorer -> Database -> TaskManagerDb -> Tables
+
+		Запросы
+1. Правой кнопкой мыши по папке Controllers Add -> Controller -> MVS Controller - Empty
+ 1.2 Далее мы можем выбрать MVC Controller - Empty или API Controller - Empty
+  1.3 Мы работает с api выбираем API Controller - Empty (ПРО ДРУГОЙ ВРИАНТ(MVC) НУЖНО ДОПОЛНИТЕЛЬНО ПОСМОТРЕТЬ)
+2. Далее создаём библиотеку классов TaskManager.Common.Models добавляем в неё классы (чтобы мог обрабатываться как веб запрос
+	так и клиентская часть)
+3. UserModel мы записываем все поля кроме entity framework отношений
+4. переносим класс UserStatus для удобства в TaskManager.Common.Models
+5. В TaskManager.Api правой кнопко нажимаем на Dependencies -> Add progect reference ставим галочку и ок
+ 5.2 где нужно с импортируем UserStatus
+6. Создаём метод в User для взаимодействия между подсистемами
+7. Далее в UsersController пишем код для заполнения таблицы(БД) Users
